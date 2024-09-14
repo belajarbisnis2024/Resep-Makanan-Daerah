@@ -53,7 +53,8 @@ header nav ul li a:hover {
 /* Banner */
 .banner {
     position: relative;
-    margin-top: 20px;
+    text-align: center;
+    color: white;
 }
 
 .banner img {
@@ -66,8 +67,6 @@ header nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
 }
 
 .banner-text h2 {
@@ -77,7 +76,13 @@ header nav ul li a:hover {
 
 .banner-text p {
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.banner-text .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .banner-text input {
@@ -85,7 +90,6 @@ header nav ul li a:hover {
     border: none;
     border-radius: 5px;
     width: 300px;
-    margin-right: 10px;
 }
 
 .banner-text button {
@@ -98,53 +102,56 @@ header nav ul li a:hover {
 }
 
 .banner-text button:hover {
-    background-color: #ff6347;
+    background-color: #ff4500;
     color: white;
-    transition: 0.3s;
 }
 
 /* Kategori Makanan */
 .kategori {
     padding: 50px 0;
     background-color: #f4f4f4;
-    text-align: center;
 }
 
 .kategori h2 {
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .kategori p {
+    text-align: center;
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
 .kategori-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .kategori-item {
     flex-basis: 30%;
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .kategori-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .kategori-item h3 {
-    margin-top: 10px;
     font-size: 1.8rem;
+    margin: 10px 0;
 }
 
 .kategori-item p {
-    font-size: 1rem;
     color: #666;
     margin: 10px 0;
 }
@@ -162,53 +169,55 @@ header nav ul li a:hover {
 .kategori-item a:hover {
     background-color: #fff;
     color: #ff6347;
-    transition: 0.3s;
     border: 1px solid #ff6347;
 }
 
 /* Resep Unggulan */
 .resep-unggulan {
     padding: 50px 0;
-    text-align: center;
 }
 
 .resep-unggulan h2 {
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .resep-unggulan p {
+    text-align: center;
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
 .resep-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .resep-item {
     flex-basis: 30%;
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .resep-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .resep-item h3 {
-    margin-top: 15px;
     font-size: 1.8rem;
+    margin: 15px 0;
 }
 
 .resep-item p {
-    font-size: 1rem;
     color: #666;
-    margin: 10px 0;
 }
 
 .resep-item a {
@@ -224,7 +233,6 @@ header nav ul li a:hover {
 .resep-item a:hover {
     background-color: #fff;
     color: #ff6347;
-    transition: 0.3s;
     border: 1px solid #ff6347;
 }
 
@@ -232,33 +240,38 @@ header nav ul li a:hover {
 .video-tutorial {
     padding: 50px 0;
     background-color: #f4f4f4;
-    text-align: center;
 }
 
 .video-tutorial h2 {
+    text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .video-tutorial p {
+    text-align: center;
     font-size: 1.2rem;
     margin-bottom: 40px;
 }
 
 .video-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .video-item iframe {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .video-item h3 {
-    margin-top: 15px;
+    text-align: center;
     font-size: 1.8rem;
+    margin-top: 15px;
 }
 
 /* Tentang Kami */
@@ -283,7 +296,6 @@ header nav ul li a:hover {
 .kontak {
     padding: 50px 0;
     background-color: #f4f4f4;
-    text-align: center;
 }
 
 .kontak h2 {
@@ -329,7 +341,390 @@ header nav ul li a:hover {
 .kontak button:hover {
     background-color: #fff;
     color: #ff6347;
-    transition: 0.3s;
+    border: 1px solid #ff6347;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .kategori-grid, .resep-grid, .video-grid {
+        flex-direction: column;
+    }
+
+    .banner-text input {
+        width: 70%;
+    }
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Global Container */
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.banner-text .search-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.banner-text input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.banner-text button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.banner-text button:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* Kategori Makanan */
+.kategori {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.kategori h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.kategori p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.kategori-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.kategori-item {
+    flex-basis: 30%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kategori-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.kategori-item h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.kategori-item p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.kategori-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.kategori-item a:hover {
+    background-color: #fff;
+    color: #ff6347;
+    border: 1px solid #ff6347;
+}
+
+/* Resep Unggulan */
+.resep-unggulan {
+    padding: 50px 0;
+}
+
+.resep-unggulan h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.resep-unggulan p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.resep-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resep-item {
+    flex-basis: 30%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resep-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.resep-item h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+.resep-item p {
+    color: #666;
+}
+
+.resep-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.resep-item a:hover {
+    background-color: #fff;
+    color: #ff6347;
+    border: 1px solid #ff6347;
+}
+
+/* Video Tutorial */
+.video-tutorial {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.video-tutorial h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-tutorial p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+/* Tentang Kami */
+.tentang-kami {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tentang-kami h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tentang-kami p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Kontak */
+.kontak {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.kontak h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.kontak p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.kontak form {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.kontak label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.kontak input, 
+.kontak textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kontak button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kontak button:hover {
+    background-color: #fff;
+    color: #ff6347;
     border: 1px solid #ff6347;
 }
 
