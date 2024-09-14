@@ -1,4 +1,4 @@
-/* Reset CSS untuk memastikan tampilan konsisten di berbagai browser */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -6,34 +6,43 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px 0;
+    background-color: #ff6f61;
+    padding: 20px;
     text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
     background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    text-align: center;
+    display: inline-block;
+    font-size: 1.1em;
 }
 
 nav a:hover {
-    background-color: #575757;
+    background-color: #ff6f61;
 }
 
 .container {
@@ -43,79 +52,232 @@ nav a:hover {
 }
 
 .hero {
-    background-image: url('https://source.unsplash.com/1600x600/?community,cooperation');
+    background-image: url('https://source.unsplash.com/1600x600/?indonesia,food');
     background-size: cover;
     background-position: center;
-    color: white;
     padding: 100px 20px;
+    color: white;
     text-align: center;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero p {
     font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .grid-item {
     background: white;
-    padding: 20px;
     flex: 1 1 calc(33.333% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grid-item h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .grid-item p {
     font-size: 1em;
-    line-height: 1.6;
+    color: #555;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-detail {
+    display: flex;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.recipe-detail img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-content {
+    flex: 1;
+}
+
+.recipe-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.recipe-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.recipe-content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.recipe-content ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.steps {
+    margin-top: 40px;
+}
+
+.steps h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.steps p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.video {
+    margin-top: 40px;
+}
+
+.comments-section {
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comments-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.comment p {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.social-icons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6f61;
 }
 
 footer {
     background-color: #333;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 footer p {
-    margin: 5px 0;
+    font-size: 1em;
 }
 
-.social-icons {
-    margin-top: 10px;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
+/* Responsive Styling */
 @media (max-width: 768px) {
-    .grid-item {
-        flex: 1 1 100%;
+    .recipe-detail {
+        flex-direction: column;
     }
 
-    .hero h1 {
+    .recipe-detail img {
+        width: 100%;
+    }
+
+    .recipe-content {
+        padding: 0 10px;
+    }
+
+    .hero h2 {
         font-size: 2.5em;
     }
 
     .hero p {
         font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 1em;
+        padding: 8px 10px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .intro h2 {
+        font-size: 1.5em;
+    }
+
+    .intro p {
+        font-size: 1em;
     }
 }
